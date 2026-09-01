@@ -1,22 +1,29 @@
-package grammar;
+package homewark;
 
 import java.util.Scanner;
 
 public class Swap {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("변수 a에 넣을 숫자 입력 : ");
-		int a = sc.nextInt();
-		System.out.print("변수 b에 넣을 숫자 입력 : ");
-		int b = sc.nextInt();
+    public static void main(String[] args) {
 
-		int temp = a;
-		a = b;
-		b = temp;
-		
-		System.out.println("< Swaping 결과 > ");
-		System.out.println("변수 a의 값 = " + a);
-		System.out.printf("변수 b의 값 = %d\n", b);
-	}
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("변수 a에 넣을 숫자 입력 : ");
+        int a = sc.nextInt();
+
+        System.out.print("변수 b에 넣을 숫자 입력 : ");
+        int b = sc.nextInt();
+
+        // a와 b의 값 교환
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println();
+        System.out.println("Swapping 결과 >");
+        System.out.println("변수 a의 값 = " + a);
+        System.out.println("변수 b의 값 = " + b);
+
+        sc.close();
+    }
 }
