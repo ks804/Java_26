@@ -5,6 +5,7 @@ import java.util.List;
 import bank.account.Account;
 import bank.account.AccountDao;
 import bank.account.AccountListDao;
+import bank.account.AccountMapDao;
 
 public class TestAccount {
 	public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class TestAccount {
 	}
 
 	public static void testAccountDao() {
-		AccountDao adao = new AccountListDao();
+		AccountDao adao = new AccountMapDao();
 
 		System.out.println(">>> 계좌 추가 및 계좌 목록");
 		adao.save(new Account(1001, "1111", "soonbeom", 10000));
